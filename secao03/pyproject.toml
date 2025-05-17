@@ -1,0 +1,22 @@
+[project]
+name = "secao03"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ayslan Francisco Monteiro Neto",email = "ayslanfrancisco999@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "uvicorn (>=0.34.2,<0.35.0)",
+    "pydantic (>=2.11.4,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "secao03", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
